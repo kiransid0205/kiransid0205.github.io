@@ -13,11 +13,11 @@ section:
 skills:
 - name: R programming
   icon: "/images/sections/Rlogo.png"
-  summary: "Proficient with Data import, managing and manipulating large data-sets. Experienced in Data clean-up, Exploratory Data analysis and Data Modelling to build useful Machine Learning models."
+  summary: "Experienced with Data import, managing and manipulating large data-sets. Experienced in Data clean-up, Exploratory Data analysis and Data Modelling to build useful Machine Learning models."
 
 - name: Python programming
   icon: "/images/sections/python.png"
-  summary: "Proficient with Data import and manipulating large data-sets. Experienced in Data clean-up and building useful Machine Learning models from the data. Proficient with SciPy and NumPy as well."
+  summary: "Proficient with Data extraction, clean-up and manipulating large data-sets. Experienced in building useful Machine Learning models from the data. Proficient with SciPy and NumPy as well."
 
 - name: StarCCM+
   icon: "/images/sections/starccm.jpg"
