@@ -1,7 +1,7 @@
 baseURL: https://kiransid0205.github.io
 
 languageCode: en-us
-title: "Kiran's blog"
+title: "Kiran Siddeshwar"
 theme: "toha"
 
 # Manage languages
@@ -10,9 +10,6 @@ languages:
   en:
     languageName: English
     weight: 1
-  bn:
-    languageName: বাংলা
-    weight: 3
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 # DefaultContentLanguage: bn
@@ -36,15 +33,15 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/site/background.jpg
+  background: "/images/background1.jpg"
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   # It will default to the theme logos if not provided.
   logo:
-    main: /images/site/main-logo.png
-    inverted: /images/site/inverted-logo.png
-    favicon: /images/site/favicon.png
+    main: /images/logo3.png
+    inverted: /images/logo4.png
+    favicon: /images/logo5.png
 
   # GitHub repo URL of your site
   gitRepo: https://github.com/kiransid0205/kiransid0205.github.io
