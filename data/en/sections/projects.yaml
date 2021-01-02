@@ -21,28 +21,28 @@ section:
 
 # your projects
 projects:
-- name: Linear Regression
-  logo: /images/sections/reg01.png
+- name: Web scraping
+  logo: /images/sections/web.jpg
   role: Owner
-  timeline: "November, 2020"
+  timeline: "January, 2021"
   repo: https://github.com/kiransid0205 # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Project on Linear Regression - To be up soon!
-  tags: ["professional", "regression", "analytics", "predictive", "rent"]
+  summary: Project on Web Scraping: Useful data from Daft.ie has been scraped to build a model on House rent prediction. This article is focussed only on the data extraction part.
+  tags: ["professional", "regression", "data", "web", "scraping","daft","web-scraping","data extraction", "analytics"]
 
-- name: Classification
-  logo: /images/sections/cla01.png
+- name: House rent prediction
+  logo: /images/sections/reg01.png
   role: Owner
-  timeline: "November, 2020"
+  timeline: "January, 2021"
   repo: https://github.com/kiransid0205
   #url: ""
-  summary: Project on Classification - To be up soon!
-  tags: ["professional", "machine-learning", "classification", "data"]
+  summary: Project on Predictive Analytics - To be up soon!
+  tags: ["professional", "machine-learning", "linear regression", "analytics", "data", "regression"]
 
 - name: Data Visualisation
   logo: /images/sections/viz01.png
   role: Owner
-  timeline: "November, 2020"
+  timeline: "January, 2021"
   repo: https://github.com/kiransid0205
   summary: Project on Data Visualisation - To be up soon!
   tags: ["visualisation", "data", "colourful", "professional"]
