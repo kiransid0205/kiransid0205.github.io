@@ -6,7 +6,7 @@ description: Project 01 - Web scraping
 menu:
   sidebar:
     name: Web Scraping
-    identifier: Web scraping
+    identifier: post01
     weight: 100
 ---
 
