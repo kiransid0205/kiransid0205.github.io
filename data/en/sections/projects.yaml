@@ -27,7 +27,7 @@ projects:
   timeline: "January, 2021"
   repo: https://github.com/kiransid0205 # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Project on Web Scraping: Useful data from Daft.ie has been scraped to build a model on House rent prediction. This article is focussed only on the data extraction part.
+  summary: Project on Web Scraping - Useful data from Daft.ie has been scraped to build a model on House rent prediction. This article is focussed only on the data extraction part.
   tags: ["professional", "regression", "data", "web", "scraping","daft","web-scraping","data extraction", "analytics"]
 
 - name: House rent prediction

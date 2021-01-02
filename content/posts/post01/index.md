@@ -5,7 +5,7 @@ hero: /posts/introduction/hand.svg
 description: Project 01 - Web scraping
 menu:
   sidebar:
-    name: Web Scraping
+    name: post01
     identifier: post01
     weight: 100
 ---
