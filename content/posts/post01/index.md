@@ -148,7 +148,7 @@ Documentation of Beautiful Soup package can be found here - https://www.crummy.c
 !["Exporting the final clean data"](./images/img28.PNG)
 *Exporting the final clean data*
 
-Code uploaded on [GitHub]()
+Code uploaded on [GitHub](https://github.com/kiransid0205/My_projects/blob/main/web_scraping.ipynb)
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/kiran-siddeshwar)!
 
