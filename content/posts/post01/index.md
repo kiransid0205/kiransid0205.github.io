@@ -1,11 +1,11 @@
 ---
 title: "Web-scraping"
-date: 2020-12-22T08:06:25+06:00
-hero: /posts/introduction/hand.svg
+date: 2021-01-03T08:06:25+06:00
+hero: /posts/post01/wallpaper.svg
 description: Project 01 - Web scraping
 menu:
   sidebar:
-    name: post01
+    name: Web Scraping
     identifier: post01
     weight: 100
 ---
@@ -62,7 +62,7 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
 *Homepage of daft.ie*
 
 !["Looking for houses on rent only in Dublin"](./images/img02.png)
-*Filtering the data to Houses for rent in Dublin*
+*Filtering the data to show only accomodation for rent in Dublin*
 
 !["A look at the data in daft.ie"](./images/img03.png)
 *This is how the data in daft.ie looks like*
@@ -70,7 +70,7 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
 - Next, the data extraction was done on Jupyter Notebook. Version of Python used: Python 3.
 
 !["Loading all necessary libraries"](./images/img04.png)
-*Loading all necessary libraries*
+*Loading all the necessary libraries*
 
 !["Setting user agent string"](./images/img12.png)
 *Setting the user agent string, which is an identification string (like an ID card). All browsers have a unique ‘user agent string’ that they identify themselves with. This means that most websites may look a tiny bit different in Chrome, Firefox, Safari and other browsers. Specifying the 'user agent string' helps in optimal visual and computational performance.*
@@ -88,15 +88,15 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
 
 - The scraping process is done using the bs4 library. Using the requests library we got the desired URL with defined headers. After that, we created an object instance ‘soup’ that was used to find the necessary data on the page. The get() function gets access to data from the desired web page. BeautifulSoup() function creates a data structure representing a parsed HTML or XML document. The find_all() function extracts a list of Tag objects that match the given criteria. Any attributes of the Tag can be specified. All the parsed data is appended into nested lists.
 
-!["Scraping of data"](./images/img07.png)
+!["Scraping of data"](./images/img07.PNG)
 *Scraping of data using functions from BeautifulSoup*
 
-!["Scraping of data"](./images/img08.png)
+!["Scraping of data"](./images/img08.PNG)
 *Scraping of data using functions from BeautifulSoup*
 
 - Each nested list is then converted to a regular list for simplicity of usage.
 
-!["Consolidation of data"](./images/img09.png)
+!["Consolidation of data"](./images/img09.PNG)
 *Consolidation of data into regular lists*
 
 - It can be observed that some entries contain extra unnecessary information that do not contribute to the required objective, but contain the same tags as the house rental rates. These data end up extracted and have to be removed.
@@ -104,21 +104,49 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
 !["Extra data"](./images/img13.png)
 *The extra unnecessary data*
 
-!["Removal of extra data"](./images/img11.png)
+!["Removal of extra data"](./images/img11.PNG)
 *Removal of extra unnecessary data*
 
  - The scraped data contains tags such as <p> and <div>. To remove this, the data is further filtered to the text and appended into lists.
 
- !["Final filtering of data"](./images/img14.png)
- *Removal of tags (like <p> and <div>) from the scraped data*
+ !["Final filtering of data"](./images/img14.PNG)
+ *Removal of HTML tags from the scraped data*
 
- !["Final filtering of data"](./images/img15.png)
- *Removal of tags (like <p> and <div>) from the scraped data*
+ !["Final filtering of data"](./images/img15.PNG)
+ *Removal of HTML tags from the scraped data*
 
 - The data is now ready to be exported. This data required further clean-up, which feels easier to be completed in excel and then combined to one file. This completed Part I of the web scraping process: Scraping of raw data from the web.
 
-!["Exporting the data"](./images/img16.png)
+!["Exporting the data"](./images/img16.PNG)
 *The filtered data is exported as .csv files*
+
+- The exported data are: House-rent prices, bedrooms, bathrooms, housing-type, address and mixed data (this contains combination of bedrooms, bathrooms and housing-type). Some of the data of bedrooms, bathrooms and housing-type which were entered recently were combined (no idea why). But it is possible to separate them in a sensible manner.
+
+- The House-rent prices, bedrooms and bathrooms datasets are simple to clean up and extract. The REPLACE() function is used to remove unnecessary characters from the elements of the .csv file. The LEFT() function is used to extract the housing-type, bedrooms, bathrooms from the mixed data file.
+
+!["Cleaning up data"](./images/img21.png)
+*Extracting useful data from the raw scraped data*
+
+- The extracted useful data is combined in a excel file and imported into Python again.
+
+!["Clean data"](./images/img22.PNG)
+*New cleaned-up data*
+
+!["New dataset"](./images/img23.PNG)
+*Importing the cleaned-up dataset*
+
+- The address column contains useful data, but for the data to be used in a prediction model this data has to be filtered properly. The localities are identified and the respective pin codes are assigned to each house according to their locality.
+
+*Cleaning up the address column to extract pin codes*
+!["Assigning pin code"](./images/img24.PNG)
+!["Assigning pin code"](./images/img25.PNG)
+!["Assigning pin code"](./images/img26.PNG)
+!["Assigning pin code"](./images/img27.PNG)
+
+- Finally, the postal code list is added to the dataframe and exported as our final clean dataset, which can be used for our predictive model in the future.
+
+!["Exporting the final clean data"](./images/img28.PNG)
+*Exporting the final clean data*
 
 Code uploaded on [GitHub]()
 

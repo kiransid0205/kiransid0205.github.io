@@ -30,7 +30,7 @@ projects:
   summary: Project on Web Scraping - Useful data from Daft.ie has been scraped to build a model on House rent prediction. This article is focussed only on the data extraction part.
   tags: ["professional", "regression", "data", "web", "scraping","daft","web-scraping","data extraction", "analytics"]
 
-- name: House rent prediction
+- name: House Rent prediction
   logo: /images/sections/reg01.png
   role: Owner
   timeline: "January, 2021"
