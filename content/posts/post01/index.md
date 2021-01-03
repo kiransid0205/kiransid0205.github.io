@@ -160,6 +160,3 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/kiran-siddeshwar)!
 Thank you!
 
 Kiran Siddeshwar
-
-
-[![Visits Badge](https://badges.pufler.dev/visits/kiransid0205.github.io/posts/post01)](https://kiransid0205.github.io/posts/post01/)
