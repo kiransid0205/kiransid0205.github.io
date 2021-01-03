@@ -154,8 +154,12 @@ Web-scraping is a useful and convenient way of collecting data for analysis. The
 Stay tuned!
 
 Code uploaded on [GitHub](https://github.com/kiransid0205/My_projects/blob/main/web_scraping.ipynb)
+
 Connect with me on [LinkedIn](https://www.linkedin.com/in/kiran-siddeshwar)!
 
 Thank you!
 
 Kiran Siddeshwar
+
+
+[![Visits Badge](https://badges.pufler.dev/visits/puf17640/git-badges)](https://badges.pufler.dev)
