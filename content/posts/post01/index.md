@@ -36,7 +36,7 @@ Web pages are built using text-based mark-up languages (HTML and XHTML), and fre
 ##### II. Ethics of Web scraping
 Although web scraping has now become an increasingly common practice, there exists some baggage. The automated nature of scraping, along with its' power to make a difference always render it questionable. Hence, web scraping is often perceived as a shady, ‘black-hat’ practice; with a big question mark always hanging over the responsibility and accountability of the entities scraping the data.
 
-Since it is a simple yet powerful procedure, the need for legislation to control and regulate web scraping was high. Under the EU’s General Data Protection Regulation (GDPR), "Web scraping restrictions do not apply to a person or company unless such an entity extracts personal data of people within the European Economic Area". It is important to note that web scraping legislation varies by location and industry.
+Since web scraping is a simple yet powerful procedure, the need for legislation to control and regulate the procedure has been high. Under the EU’s General Data Protection Regulation (GDPR), "Web scraping restrictions do not apply to a person or company unless such an entity extracts personal data of people within the European Economic Area". It is important to note that web scraping legislation varies by location and industry.
 
 Best practices:
 1. Good web citizenship: Ethical web scraping begins with a commitment to good web citizenship. Familiarizing oneself with CFAA, GDPR, CAN-SPAM, REP, and other legislations would ensure there is no violation of any laws.
@@ -48,15 +48,15 @@ Best practices:
 
 
 ##### III. Tools used
-The web scraping in this project is being done using Python. Python has many useful packages and Beautiful Soup is one amongst them. It helps in data extraction by parsing HTML and XML documents. It creates a parse tree for parsed pages that can be used to extract data from HTML, which is useful for web scraping.
+The web scraping in this project has been done using Python. Python has many useful packages and Beautiful Soup is one amongst them. It helps in data extraction by parsing HTML and XML documents; it creates a parse tree for parsed pages that can be used to extract data from HTML, which is useful for web scraping.
 
-I have used Python 3 for this task, and have applied the bs4 version of the Beautiful Soup package for the data extraction.
+Python 3 has been used for this task, and the bs4 version of the Beautiful Soup package has been applied for the data extraction.
 
-Documentation of Beautiful Soup package: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+Documentation of Beautiful Soup package can be found here - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
 
 ##### IV. Methodology
-- Identify the website to scrape data off of. In our case, it's daft.ie. We will filter our results only for houses for rent in Dublin.
+- Identify the website to scrape data off of. In our case, it's daft.ie. We will filter our results to "Houses for rent in Dublin".
 
 !["Homepage of daft.ie"](./images/img01.png)
 *Homepage of daft.ie*
@@ -67,7 +67,7 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
 !["A look at the data in daft.ie"](./images/img03.png)
 *This is how the data in daft.ie looks like*
 
-- Next, the data extraction was done on Jupyter Notebook. Version of Python used: Python 3.
+- The tool used is Python (version 3) on Jupyter Notebook.
 
 !["Loading all necessary libraries"](./images/img04.png)
 *Loading all the necessary libraries*
@@ -75,7 +75,7 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
 !["Setting user agent string"](./images/img12.png)
 *Setting the user agent string, which is an identification string (like an ID card). All browsers have a unique ‘user agent string’ that they identify themselves with. This means that most websites may look a tiny bit different in Chrome, Firefox, Safari and other browsers. Specifying the 'user agent string' helps in optimal visual and computational performance.*
 
-- For data extraction, parsing is required first. For data to be parsed, the element IDs and other attributes have to be examined.
+- For data extraction, parsing is required first. For data to be parsed, the element IDs and other attributes are examined.
 
 !["Data parsing"](./images/img05.png)
 *Data parsing by checking the element*
@@ -86,7 +86,7 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
 !["Identification of elements"](./images/img10.png)
 *Identification of elements which aid in data extraction*
 
-- The scraping process is done using the bs4 library. Using the requests library we got the desired URL with defined headers. After that, we created an object instance ‘soup’ that was used to find the necessary data on the page. The get() function gets access to data from the desired web page. BeautifulSoup() function creates a data structure representing a parsed HTML or XML document. The find_all() function extracts a list of Tag objects that match the given criteria. Any attributes of the Tag can be specified. All the parsed data is appended into nested lists.
+- The scraping process is done using the bs4 library. Using the requests library, we get the desired URL with defined headers. After that, we create an object instance ‘soup’ that is used to find the necessary data on the page. The get() function gets access to data from the desired web page. BeautifulSoup() function creates a data structure representing a parsed HTML or XML document. The find_all() function extracts a list of Tag objects that match the given criteria. Any attributes of the Tag can be specified. All the parsed data is appended into nested lists.
 
 !["Scraping of data"](./images/img07.PNG)
 *Scraping of data using functions from BeautifulSoup*
@@ -94,12 +94,12 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
 !["Scraping of data"](./images/img08.PNG)
 *Scraping of data using functions from BeautifulSoup*
 
-- Each nested list is then converted to a regular list for simplicity of usage.
+- Each nested list is converted to a regular list for simplicity of usage.
 
 !["Consolidation of data"](./images/img09.PNG)
 *Consolidation of data into regular lists*
 
-- It can be observed that some entries contain extra unnecessary information that do not contribute to the required objective, but contain the same tags as the house rental rates. These data end up extracted and have to be removed.
+- It can be observed that some entries contain unnecessary information that do not contribute to the required objective, but contain the same tags as the house rental rates. These data end up extracted and have to be removed.
 
 !["Extra data"](./images/img13.png)
 *The extra unnecessary data*
@@ -115,7 +115,7 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
  !["Final filtering of data"](./images/img15.PNG)
  *Removal of HTML tags from the scraped data*
 
-- The data is now ready to be exported. This data required further clean-up, which feels easier to be completed in excel and then combined to one file. This completed Part I of the web scraping process: Scraping of raw data from the web.
+- The data is now ready to be exported. This data requires further clean-up, which is easier to complete in MS Excel and then combined to one single dataset. This completes Part I of the web scraping process: Scraping of raw data from the web.
 
 !["Exporting the data"](./images/img16.PNG)
 *The filtered data is exported as .csv files*
@@ -143,7 +143,7 @@ Documentation of Beautiful Soup package: https://www.crummy.com/software/Beautif
 !["Assigning pin code"](./images/img26.PNG)
 !["Assigning pin code"](./images/img27.PNG)
 
-- Finally, the postal code list is added to the dataframe and exported as our final clean dataset, which can be used for our predictive model in the future.
+- Finally, the postal code list is added to the dataframe and exported as our final clean dataset, which can be used for our predictive model in the future. This completes Part II of the web scraping process.
 
 !["Exporting the final clean data"](./images/img28.PNG)
 *Exporting the final clean data*
