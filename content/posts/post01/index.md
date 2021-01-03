@@ -162,4 +162,4 @@ Thank you!
 Kiran Siddeshwar
 
 
-[![Visits Badge](https://badges.pufler.dev/visits/puf17640/git-badges)](https://kiransid0205.github.io/posts/post01/)
+[![Visits Badge](https://badges.pufler.dev/visits/kiransid0205.github.io/posts/post01)](https://kiransid0205.github.io/posts/post01/)
