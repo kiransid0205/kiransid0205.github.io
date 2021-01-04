@@ -160,3 +160,5 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/kiran-siddeshwar)!
 Thank you!
 
 Kiran Siddeshwar
+
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fkiransid0205.github.io%2Fposts%2Fpost01%2F)
